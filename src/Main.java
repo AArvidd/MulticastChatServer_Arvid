@@ -10,7 +10,7 @@ public class Main {
         MulticastSocket serverMulticastSocket = new MulticastSocket(portNumber);
         System.out.println("MulticastSocket is created at port " + portNumber);
 
-        InetAddress group = InetAddress.getByName("225. 4. 5. 6");
+        InetAddress group = InetAddress.getByName("225.4.5.6");
 
         serverMulticastSocket.joinGroup(group);
         System.out.println("joinGroup method is called...");
